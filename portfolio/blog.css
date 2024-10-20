@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.blog-section {
+    padding: 80px 10%;
+    margin-left: 128px; /* Keep the same margin as in resume.css */
+    margin-top: 118px; /* Same margin top */
+    max-width: 1200px; /* Optional: Max width for better readability */
+}
+
+/* Consistent Heading Styles */
+h1, h2 {
+    margin-left: 150px; /* Keep the same margin as in resume.css */
+    margin-top: 140px; /* Same margin top */
+    color: rgb(52, 73, 94); /* Same color */
+    font-weight: 400; /* Set font weight to thin */
+}
+
+.blog-heading {
+    font-size: 42px; /* Same size as the Resume heading */
+    margin: 0 0 20px; /* Adjust margins */
+}
+
+/* GIF Container */
+.gif-container {
+    display: flex;
+    justify-content: center; /* Center the GIF */
+    margin: 40px 0; /* Spacing around the GIF */
+}
+
+/* No Publication Message */
+.no-publication {
+    font-size: 16px; /* Adjust font size to be consistent with the rest */
+    text-align: center; /* Center the message */
+    margin: 20px; /* Space around the message */
+    font-weight: 300px; /* Set font weight to thin */
+}
+
+/* Navigation */
+nav {
+    position: fixed;            
+    margin-bottom: 20px; /* Space below the nav */
+    top: 34px;
+    left: 275px;
+    padding: 3px 8px; /* Consistent padding */
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+nav ul li {
+    display: inline-block; /* Keep items in line */
+    margin: 0 5px; /* Adjust spacing between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: rgb(122, 122, 122); /* Color for links */
+    transition: font-weight 0.3s ease; /* Smooth transition to bold */
+    font-family: 'Roboto Mono', monospace; /* Font for links */
+    font-size: 14px; /* Font size for link text */
+    font-weight: 300; /* Set font weight to thin */
+}
+
+nav ul li a:hover {
+    font-weight: 700; /* Bold text on hover */
+    color: rgb(61, 60, 60); /* Darker color on hover */
+}
+
+.separator {
+    color: rgb(122, 122, 122); /* Color for separators */
+    margin: 0 5px; /* Margin around separators */
+}
+
+
+/* Footer */
+footer {
+    background-color: #ffffff; /* White background */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some padding for spacing */
+    width: 100%; /* Full width */
+    margin-top: auto; /* Push the footer to the bottom of the page */
+    font-weight: 200; /* Font weight */
+    color: rgb(0, 0, 0); /* Set text color */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    color: rgb(0, 0, 0); /* Set text color */
+    font-family: "Roboto Mono", Helvetica, Arial, sans-serif; /* Use your existing font */
+    font-size: 14px; /* Font size */
+    font-weight: 200; /* Font weight */
+    letter-spacing: 0.5px; /* Optional letter spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-section {
+        padding: 40px 5%; /* Adjust padding for smaller screens */
+    }
+
+    .blog-gif {
+        width: 80%; /* Make GIF responsive */
+    }
+}

@@ -1,0 +1,229 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    transition: all 0.3s ease; /* Apply smooth transitions to all elements */
+}
+
+body {
+    line-height: 1.6;
+    color: #000; /* Global text color set to black */
+    background-color: #ffffff; /* Light background for contrast */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Main Section */
+.main-section {
+    height: 100vh;
+    background: url('backgroud cha7T.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    position: relative;
+    margin-left: -50vw; /* Move left */
+    margin-right: -50vw; /* Move right */
+    left: 50%; /* Center horizontally */
+    right: 50%; /* Center horizontally */
+    width: 100vw; /* Full width of viewport */
+    padding-left: 50px; /* Add some padding from the left */
+}
+
+/* Navigation */
+nav {
+    position: fixed;            
+    margin-bottom: 20px; /* Space below the nav */
+    top: 34px;
+    left: 275px;
+    padding: 3px 8px; /* Consistent padding */
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+nav ul li {
+    display: inline-block; /* Keep items in line */
+    margin: 0 5px; /* Adjust spacing between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: rgb(122, 122, 122); /* Color for links */
+    transition: font-weight 0.3s ease; /* Smooth transition to bold */
+    font-family: 'Roboto Mono', monospace; /* Font for links */
+    font-size: 14px; /* Font size for link text */
+    font-weight: 300; /* Set font weight to thin */
+}
+
+nav ul li a:hover {
+    font-weight: 700; /* Bold text on hover */
+    color: rgb(61, 60, 60); /* Darker color on hover */
+}
+
+.separator {
+    color: rgb(122, 122, 122); /* Color for separators */
+    margin: 0 5px; /* Margin around separators */
+}
+
+
+
+
+
+/* Cursor typing */
+.cursor {
+    color: white; /* Color of the cursor */
+    animation: blink 0.7s step-end infinite; /* Blink effect */
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+/* Intro Section */
+.intro {
+    text-align: left; /* Align text to the left */
+    color: white;
+    margin-top: -10vh; /* Adjust margin as needed */
+    width: calc(100% - 275px); /* Full width minus navigation left offset */
+    margin-left: 275px; /* Match the left position of the nav */
+}
+
+.intro h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    flex-direction: row; /* Change to row on larger screens */
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start */
+    padding: 60px 80px;
+    background-color: rgba(255, 255, 255, 0.9);
+    gap: 30px;
+    margin-top: 30px; /* Add some space above this section */
+    margin-left: 275px; /* Match the left position of the nav */
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* Stack the sections vertically on smaller screens */
+        align-items: center; /* Center the content */
+    }
+
+    .about, .links {
+        max-width: 100%; /* Ensure both sections take full width */
+        text-align: center; /* Center the text in smaller viewports */
+    }
+
+    .about p {
+        width: auto; /* Allow paragraph to take auto width */
+    }
+}
+
+/* About Section */
+.about {
+    max-width: 50%;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(52, 73, 94); /* Set color for "Hi there!" */
+    font-weight: 400; /* Set font weight to thin */
+}
+
+.about p {
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+/* Links Section */
+.links {
+    text-align: left; /* Align text to the right */
+    margin-right: 275px; /* Match the left position of the nav */
+}
+
+.links h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(52, 73, 94); /* Set color for "Links" */
+    font-weight: 400; /* Set font weight to thin */
+}
+
+/* Icons Section */
+.icons img {
+    width: 24px;
+    margin: 0 8px;
+    transition: opacity 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.icons a {
+    color: #000; /* Black for links */
+    text-decoration: none;
+}
+
+.icons a:hover img {
+    opacity: 0.5; /* Change opacity on hover */
+}
+
+.mail-icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition: opacity 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.mail-icon:hover {
+    opacity: 0.5; /* Change opacity on hover */
+}
+
+/* Styles for the email link */
+a {
+    color: #000; /* Set link color to black */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+a:hover {
+    color: #555; /* Optional: Change color on hover for better visibility */
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff; /* White background */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some padding for spacing */
+    width: 100%; /* Full width */
+    margin-top: auto; /* Push the footer to the bottom of the page */
+    font-weight: 200; /* Font weight */
+    color: rgb(0, 0, 0); /* Set text color */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    color: rgb(0, 0, 0); /* Set text color */
+    font-family: "Roboto Mono", Helvetica, Arial, sans-serif; /* Use your existing font */
+    font-size: 14px; /* Font size */
+    font-weight: 200; /* Font weight */
+    letter-spacing: 0.5px; /* Optional letter spacing */
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling when jumping between sections */
+}

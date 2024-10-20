@@ -1,0 +1,206 @@
+/* General Styles */
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.resume-section {
+    padding: 80px 10%;
+}
+
+h1, h2 {
+    margin-left: 150px;
+    margin-top: 140px; /* Adjust the value as needed for space */
+    color: rgb(52, 73, 94); /* Change color for all h2 elements */
+}
+
+/* Styles for Resume Heading */
+.resume-heading {
+    box-sizing: border-box;
+    color: rgb(52, 73, 94);
+    display: block;
+    font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    line-height: 46.2px;
+    margin: 120px 0 20px 126px; /* Top, Bottom, Right, Left */
+}
+
+/* Education and Experience Heading Style */
+.section-title {
+    box-sizing: border-box;
+    color: rgb(52, 73, 94); /* Color for the text */
+    display: inline-block; /* Display type */
+    font-family: "Roboto Mono", Helvetica, Arial, sans-serif; /* Font family */
+    font-size: 30px; /* Font size */
+    font-weight: 400; /* Font weight */
+    letter-spacing: 0.8px; /* Letter spacing */
+    line-height: 33px; /* Line height */
+    margin: 19px 0 20px 126px; /* Top, Bottom, Right, Left */
+}
+
+/* UIR Heading Style */
+.uir-heading, .intern-heading {
+    box-sizing: border-box;
+    color: rgb(0, 0, 0); /* Text color */
+    display: block; /* Display type */
+    font-family: "Roboto Mono", Helvetica, Arial, sans-serif; /* Font family */
+    font-size: 20px; /* Font size */
+    font-weight: 700; /* Font weight */
+    letter-spacing: 0.8px; /* Letter spacing */
+    line-height: 22px; /* Line height */
+    margin: 19px 0 20px; /* Top, Bottom */
+    text-align: left; /* Align text to the left */
+    width: 680px; /* Set width */
+}
+
+/* Degree and Specialization Style */
+.degree-specialization, .intern-specialization {
+    box-sizing: border-box;
+    color: rgb(0, 0, 0); /* Text color */
+    display: block; /* Display type */
+    font-family: "Roboto Mono", Helvetica, Arial, sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+    font-weight: 300; /* Font weight */
+    letter-spacing: 0.8px; /* Letter spacing */
+    line-height: 25px; /* Line height */
+    margin: 10px 0 15px; /* Top, Bottom */
+    text-align: left; /* Align text to the left */
+    width: 680px; /* Set width */
+}
+
+/* Logos */
+.logo {
+    width: 193.365px;      /* Set the width */
+    height: 99.9896px;     /* Set the height */
+    max-width: 70%;        /* Ensure it doesn't exceed 70% of its parent */
+    max-height: 100px;     /* Limit the height */
+    vertical-align: middle; /* Align vertically in line with text */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Education and Experience Section */
+.education, .experience {
+    margin-bottom: 150px;
+}
+
+.education-entry, .experience-entry {
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.education-entry:hover, .experience-entry:hover {
+    background-color: rgba(230, 230, 230, 0.5);
+    border-radius: 5px;
+}
+
+.school-logo, .company-logo {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.education-info, .experience-info {
+    font-size: 1rem;
+}
+
+.education-info h3, .experience-info h3 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.education-info p, .experience-info p {
+    margin: 5px 0;
+    color: rgb(0, 0, 0);
+}
+
+/* Navigation */
+nav {
+    position: fixed;            
+    margin-bottom: 20px; /* Space below the nav */
+    top: 34px;
+    left: 275px;
+    padding: 3px 8px; /* Consistent padding */
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+nav ul li {
+    display: inline-block; /* Keep items in line */
+    margin: 0 5px; /* Adjust spacing between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: rgb(122, 122, 122); /* Color for links */
+    transition: font-weight 0.3s ease; /* Smooth transition to bold */
+    font-family: 'Roboto Mono', monospace; /* Font for links */
+    font-size: 14px; /* Font size for link text */
+    font-weight: 300; /* Set font weight to thin */
+}
+
+nav ul li a:hover {
+    font-weight: 700; /* Bold text on hover */
+    color: rgb(61, 60, 60); /* Darker color on hover */
+}
+
+.separator {
+    color: rgb(122, 122, 122); /* Color for separators */
+    margin: 0 5px; /* Margin around separators */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-section {
+        padding: 40px 5%; /* Adjust padding for smaller screens */
+    }
+
+    nav ul li {
+        display: block; /* Stack links vertically on small screens */
+        margin: 5px 0; /* Vertical spacing */
+    }
+
+    .education-entry, .experience-entry {
+        margin-left: 20px; /* Less margin on small screens */
+    }
+
+    .school-logo, .company-logo {
+        width: 100px; /* Smaller logos on small screens */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff; /* White background */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some padding for spacing */
+    width: 100%; /* Full width */
+    margin-top: auto; /* Push the footer to the bottom of the page */
+    font-weight: 200; /* Font weight */
+    color: rgb(0, 0, 0); /* Set text color */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    color: rgb(0, 0, 0); /* Set text color */
+    font-family: "Roboto Mono", Helvetica, Arial, sans-serif; /* Use your existing font */
+    font-size: 14px; /* Font size */
+    font-weight: 100; /* Font weight */
+    letter-spacing: 0.5px; /* Optional letter spacing */
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling when jumping between sections */
+}
